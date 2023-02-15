@@ -1,9 +1,7 @@
 .App {
   text-align: center;
   margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .App-logo {
@@ -53,18 +51,18 @@
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   outline: none;
   outline: 0;
-  padding: 10px 25px;
+  padding: 5px 10px;
   text-align: center;
   transform: translateY(0);
   transition: transform 150ms, box-shadow 150ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin: 0 0.2rem;
 }
 
 .btn:hover {
@@ -72,8 +70,25 @@
   transform: translateY(-2px);
 }
 
-@media (min-width: 768px) {
-  .btn {
-    padding: 10px 30px;
-  }
+
+.input-field {
+  width: 200px;
+  padding:15px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+}
+
+.todo-items {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.todo-item {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
